@@ -44,7 +44,7 @@ $mysqli->set_charset("utf8");?>
     </style>
 </head>
 <body>
-<div id="search-bar" ><H1 align="center"  style="color:#26A69A">TITLE</H1></div>
+<div id="search-bar" ><H1 align="center"  style="color:#26A69A">我的毕业设计</H1></div>
 <div id="tab-nav" class="z-depth-1">
     <ul class="tabs transparent">
         <div id="site-types">
