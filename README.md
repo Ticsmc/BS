@@ -29,5 +29,17 @@ Copyright (c) The PHP Group
 Zend Engine v3.4.0, Copyright (c) Zend Technologies
     with Zend OPcache v7.4.2, Copyright (c), by Zend Technologies
 ```
-### 
+## 站点样式
+
+![web-set](https://github.com/Ticsmc/BS/blob/master/images/sit.png)
+
+## docker
+
+```shell
+#拉取镜像
+sudo docker pull registry.cn-hangzhou.aliyuncs.com/my_register/lnmp:v1
+
+#运行镜像
+docker run -it -d -p 80:80 registry.cn-hangzhou.aliyuncs.com/my_register/lnmp:v1
+```
 
