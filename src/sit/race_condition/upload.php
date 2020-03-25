@@ -3,8 +3,8 @@ show_source(__FILE__);
 $allowtype = array("gif","png","jpg");
 $size = 10000000;
 $path = "./uploads/";
-$filename = $_FILES['myfile']['name'];
-
+//$filename = $_FILES['myfile']['name'];
+$filename = $_FILES['file']['name'];
 if (is_uploaded_file($_FILES['myfile']['tmp_name'])){
     if (!move_uploaded_file($_FILES['myfile']['tmp_name'],$path.$filename)){
         die("error:can not move!");
