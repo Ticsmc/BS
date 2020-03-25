@@ -122,14 +122,8 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, 'aas', '37f31694ce2528a64cfacc73c612ef06');
+
 INSERT INTO `user` VALUES (6, 'admin', '46f94c8de14fb36680850768ff1b7f2a');
-INSERT INTO `user` VALUES (7, 'admin', '46f94c8de14fb36680850768ff1b7f2a');
-INSERT INTO `user` VALUES (8, 'qweq2', '46f94c8de14fb36680850768ff1b7f2a');
-INSERT INTO `user` VALUES (9, 'admin', '76a2173be6393254e72ffa4d6df1030a');
-INSERT INTO `user` VALUES (10, 'qwqw', '46f94c8de14fb36680850768ff1b7f2a');
-INSERT INTO `user` VALUES (11, 'root', '46f94c8de14fb36680850768ff1b7f2a');
-INSERT INTO `user` VALUES (12, 'qaqa', '46f94c8de14fb36680850768ff1b7f2a');
-INSERT INTO `user` VALUES (13, 'qwer', '46f94c8de14fb36680850768ff1b7f2a');
+
 
 SET FOREIGN_KEY_CHECKS = 1;
