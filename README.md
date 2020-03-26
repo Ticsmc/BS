@@ -37,9 +37,9 @@ Zend Engine v3.4.0, Copyright (c) Zend Technologies
 
 ```shell
 #拉取镜像
-sudo docker pull registry.cn-hangzhou.aliyuncs.com/my_register/lnmp:v1
+sudo docker pull registry.cn-hangzhou.aliyuncs.com/my_register/lnmp
 
 #运行镜像
-docker run -it -d -p 80:80 registry.cn-hangzhou.aliyuncs.com/my_register/lnmp:v1
+docker run -it -d -p 80:80 registry.cn-hangzhou.aliyuncs.com/my_register/lnmp
 ```
 
