@@ -51,13 +51,13 @@ function login($db,$username,$pwd){
 function register($db,$username,$pwd){
     $sql = "INSERT INTO `user`(u_name,u_password)VALUES (\"$username\",MD5(\"$pwd\"));";
     if ($db->query($sql) === TRUE) {
+        setcookie ("register", "yes", time()+20);
         echo "<script>document.location.href = \"../index.html\";</script>";
     } else {
 
         echo "<script>document.location.href = \"../404.html\";</script>";
     }
 
-    setcookie ("register", "yes", time()+10);
     $db->close();
 }
 

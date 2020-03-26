@@ -16,7 +16,11 @@
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
-
+CREATE DATABASE tindb;
+create user 'user'@'localhost' identified by '123456';
+grant all privileges on `tindb`.* to 'user'@'localhost';
+flush privileges;
+use tindb;
 -- ----------------------------
 -- Table structure for account
 -- ----------------------------
