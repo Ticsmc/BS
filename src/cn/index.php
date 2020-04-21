@@ -84,10 +84,7 @@ $mysqli->set_charset("utf8");?>
                 </header>
                 <ul id="main-menu" class="main-menu">
                     <?php
-<<<<<<< HEAD
 
-=======
->>>>>>> 276e9d894155cb08a68cd6806bbc46eecdb376e9
                     $stmt=$mysqli->prepare("SELECT * FROM site_type ORDER BY st_id");
                     $stmt->execute();
                     $result = $stmt->get_result();
@@ -102,7 +99,6 @@ $mysqli->set_charset("utf8");?>
                                 <i class="linecons-star"></i>
                                 <span class="title"><?php echo $row['st_name']; ?></span>
                             </a>
-<<<<<<< HEAD
                             <ul>
                                 <?php
                                 $mysqli_2=new mysqli($DB_HOST,$DB_USER,$DB_PASS,$DB_NAME,$DB_PORT);
@@ -121,8 +117,6 @@ $mysqli->set_charset("utf8");?>
                                 <?php } ?>
                             </ul>
 
-=======
->>>>>>> 276e9d894155cb08a68cd6806bbc46eecdb376e9
                         </li>
 
                     <?php } ?>
@@ -171,10 +165,7 @@ $mysqli->set_charset("utf8");?>
                 <H1 class="text-gray" > 毕业设计</H1>
             </nav>
             <!-- 常用推荐 -->
-<<<<<<< HEAD
             <div id="topic-list" class="">
-=======
->>>>>>> 276e9d894155cb08a68cd6806bbc46eecdb376e9
         <?php
         for ($i = 0; $i < count($site_type_ids); $i++){ ?>
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="<?php echo $site_type_ids[$i] ?>"><?php echo $site_type_name[$i] ?></i></h4>
@@ -185,7 +176,6 @@ $mysqli->set_charset("utf8");?>
                 $result = $stmt->get_result();
                 while ($row = $result->fetch_assoc()) {?>
 
-<<<<<<< HEAD
                 <div  class="col-sm-3">
 
                         <div  class="xe-widget xe-conversations box2 label-info"  data-toggle="tooltip" data-placement="bottom" title="" data-original-title=<?php echo $row['s_name'] ?>>
@@ -198,18 +188,6 @@ $mysqli->set_charset("utf8");?>
                                     <strong><?php echo $row['s_name']?></strong>
                                 </a>
 
-=======
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('.<?php echo $row['s_url'] ?>', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title=<?php echo $row['s_name'] ?>>
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img data-src="../assets/images/logos/<?php echo $site_type_ids[$i] ?>.png" class="lozad img-circle" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <a href="#" class="xe-user-name overflowClip_1">
-                                    <strong><?php echo $row['s_name']?></strong>
-                                </a>
->>>>>>> 276e9d894155cb08a68cd6806bbc46eecdb376e9
                                 <p class="overflowClip_2"> 难度:<?php echo $row['s_id']/5 ?></p>
                             </div>
                         </div>
@@ -219,14 +197,9 @@ $mysqli->set_charset("utf8");?>
             <?php } ?>
             <div class="row"></div>
             <?php } ?>
-<<<<<<< HEAD
             <?php mysqli_close($mysqli);
             mysqli_close($mysqli_2);?>
             </div>
-=======
-            <?php mysqli_close($mysqli);?>
-
->>>>>>> 276e9d894155cb08a68cd6806bbc46eecdb376e9
 
             <!--END 界面设计 -->
             <!-- 交互动效 -->
@@ -281,7 +254,6 @@ $mysqli->set_charset("utf8");?>
          const observer = lozad();
          observer.observe();
 
-<<<<<<< HEAD
         // $(document).on('click', '.has-sub', function(){
         //     var _this = $(this)
         //     if(!$(this).hasClass('expanded')) {
@@ -358,63 +330,6 @@ $mysqli->set_charset("utf8");?>
     //     pos = $(href).position().top - 30;
     // });
 
-=======
-        $(document).on('click', '.has-sub', function(){
-            var _this = $(this)
-            if(!$(this).hasClass('expanded')) {
-               setTimeout(function(){
-                    _this.find('ul').attr("style","")
-               }, 300);
-              
-            } else {
-                $('.has-sub ul').each(function(id,ele){
-                    var _that = $(this)
-                    if(_this.find('ul')[0] != ele) {
-                        setTimeout(function(){
-                            _that.attr("style","")
-                        }, 300);
-                    }
-                })
-            }
-        })
-        $('.user-info-menu .hidden-sm').click(function(){
-            if($('.sidebar-menu').hasClass('collapsed')) {
-                $('.has-sub.expanded > ul').attr("style","")
-            } else {
-                $('.has-sub.expanded > ul').show()
-            }
-        })
-        $("#main-menu li ul li").click(function() {
-            $(this).siblings('li').removeClass('active'); // 删除其他兄弟元素的样式
-            $(this).addClass('active'); // 添加当前元素的样式
-        });
-        $("a.smooth").click(function(ev) {
-            ev.preventDefault();
-
-            public_vars.$mainMenu.add(public_vars.$sidebarProfile).toggleClass('mobile-is-visible');
-            ps_destroy();
-            $("html, body").animate({
-                scrollTop: $($(this).attr("href")).offset().top - 30
-            }, {
-                duration: 500,
-                easing: "swing"
-            });
-        });
-        return false;
-    });
-
-    var href = "";
-    var pos = 0;
-    $("a.smooth").click(function(e) {
-        $("#main-menu li").each(function() {
-            $(this).removeClass("active");
-        });
-        $(this).parent("li").addClass("active");
-        e.preventDefault();
-        href = $(this).attr("href");
-        pos = $(href).position().top - 30;
-    });
->>>>>>> 276e9d894155cb08a68cd6806bbc46eecdb376e9
     </script>
     <!-- Bottom Scripts -->
     <script src="../assets/js/bootstrap.min.js"></script>
