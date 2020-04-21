@@ -6,8 +6,12 @@
 #=============================================================
 #!/bin/sh
 mysqld&
-ysqladmin -u root password "123456" -S /tmp/mysql.sock 
-mysql -u root -p"123456" -S /tmp/mysql.sock < /data/www/mysql.sql
+while :
+do
+    ls /tmp/mysql.sock &> /dev/null  && break
+done
+mysqladmin -u root password "123456" -S /tmp/mysql.sock 
+mysql -u root -p"123456" -S /tmp/mysql.sock < /data/www/tindb.sql
 php-fpm
 
 nginx -g "daemon off;"
