@@ -11,12 +11,16 @@
  Target Server Version : 50645
  File Encoding         : 65001
 
- Date: 21/03/2020 20:20:34
+ Date: 26/03/2020 01:02:08
 */
 
 SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
-
+CREATE DATABASE tindb;
+create user 'user'@'localhost' identified by '123456';
+grant all privileges on `tindb`.* to 'user'@'localhost';
+flush privileges;
+use tindb;
 -- ----------------------------
 -- Table structure for account
 -- ----------------------------
@@ -107,5 +111,23 @@ INSERT INTO `site_type` VALUES (4, '文件包含');
 INSERT INTO `site_type` VALUES (5, '文件上传');
 INSERT INTO `site_type` VALUES (6, '代码/命令执行');
 INSERT INTO `site_type` VALUES (7, '其他');
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
+  `u_id` int(11) NOT NULL AUTO_INCREMENT,
+  `u_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `u_password` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`u_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+
+INSERT INTO `user` VALUES (6, 'admin', '46f94c8de14fb36680850768ff1b7f2a');
+
 
 SET FOREIGN_KEY_CHECKS = 1;
