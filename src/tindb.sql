@@ -87,7 +87,6 @@ INSERT INTO `site` VALUES (16, 6, '任意代码执行', './sit/code_exec/code.ph
 INSERT INTO `site` VALUES (17, 6, '任意命令执行', './sit/code_exec/exec.php');
 INSERT INTO `site` VALUES (18, 7, 'SSRF', './sit/ssrf/ssrf.php');
 INSERT INTO `site` VALUES (19, 7, '条件竞争-支付', './sit/race_condition/pay.php');
--- INSERT INTO `site` VALUES (20, 7, '条件竞争-上传', './sit/race_condition/upload.php');
 INSERT INTO `site` VALUES (21, 7, '任意文件读取', './sit/others/file_read.php');
 INSERT INTO `site` VALUES (22, 7, 'XXE', './sit/xxe/');
 
