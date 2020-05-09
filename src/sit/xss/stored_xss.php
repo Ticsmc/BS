@@ -5,6 +5,7 @@
 	<title> 存储XSS</title>
 </head>
 <body>
+<h1>XSS 存储型</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("POST","name");

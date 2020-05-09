@@ -5,6 +5,7 @@
 	<title> 反射XSS</title>
 </head>
 <body>
+<h1>XSS 反射型</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("GET","name");

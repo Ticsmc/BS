@@ -5,6 +5,7 @@
     <title>zhr - SQLi_STRING</title>
 </head>
 <body>
+<h1>SQLi 字符型</h1>
 <?php
 include('../conn.php');
 include "../class/function.class.php";

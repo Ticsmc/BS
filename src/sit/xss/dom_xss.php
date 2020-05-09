@@ -5,6 +5,7 @@
 	<title> DOM_XSS</title>
 </head>
 <body>
+<h1>XSS DOM型</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("GET","name");

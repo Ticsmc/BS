@@ -5,6 +5,7 @@
 	<title>zhr - 命令执行</title>
 </head>
 <body>
+<h1>任意命令执行</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("GET","command");

@@ -5,6 +5,7 @@
     <title>zhr - SQLi_SEARCH</title>
 </head>
 <body>
+<h1>SQLi 搜索型</h1>
 <?php
 include('../conn.php');
 include "../class/function.class.php";

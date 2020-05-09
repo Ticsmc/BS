@@ -5,6 +5,7 @@
     <title>zhr - SQLi_NUM</title>
 </head>
 <body>
+<h1>SQLi 数字型</h1>
 <?php
 include('../conn.php');
 include "../class/function.class.php";

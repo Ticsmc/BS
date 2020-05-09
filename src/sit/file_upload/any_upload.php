@@ -2,11 +2,11 @@
 <head>
     <meta charset="utf-8"/>
     <title>
-        zhr - 文件上传漏洞演示脚本--任意上传实例
+       文件上传漏洞演示脚本--任意上传实例
     </title>
 </head>
 <body>
-<h3>zhr - 文件上传漏洞演示脚本--任意上传实例</h3><br/>
+<h3> 文件上传漏洞演示脚本--任意上传实例</h3><br/>
 <form action="" method="post" enctype="multipart/form-data">
     <label for="file">文件:</label>
     <input type="file" name="file" id="file" />

@@ -5,6 +5,7 @@
 	<title>zhr - PATH_INCLUDE</title>
 </head>
 <body>
+<h1>目录限制文件包含</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("GET","file");

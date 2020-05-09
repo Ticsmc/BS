@@ -5,6 +5,7 @@
 	<title>zhr - 代码执行</title>
 </head>
 <body>
+<h1>任意代码执行</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("GET","code");

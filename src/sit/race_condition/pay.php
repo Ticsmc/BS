@@ -5,6 +5,7 @@
     <title>支付页面</title>
 </head>
 <body>
+<h1>条件竞争-支付</h1>
 <?php 
 include('../conn.php');
 $db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);

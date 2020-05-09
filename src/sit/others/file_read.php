@@ -5,6 +5,7 @@
 	<title>zhr - FileRead</title>
 </head>
 <body>
+<h1>任意文件读取</h1>
 <?php
 	include "../class/function.class.php";
 	$p = new Func("GET","filename");
