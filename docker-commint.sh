@@ -5,4 +5,4 @@
 # Created Time: Thu 19 Mar 2020 01:22:00 PM UTC
 #=============================================================
 #!/bin/bash
-docker build -t  lnmp:v1 .
+docker build -t  lnmp:v2 .
